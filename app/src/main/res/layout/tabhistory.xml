@@ -5,11 +5,194 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tab_history"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtPrisonResource"
+                android:textAlignment="viewStart" />
+
+            <CheckBox
+                android:id="@+id/checkboxYesPrison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView3"
+                android:text="DA" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:text="@string/resNo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtDiseases"
+                android:textAlignment="viewStart" />
+
+            <CheckBox
+                android:id="@+id/checkBoxYesHepatita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView5"
+                android:text="@string/resYes" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBoxYesHepatita"
+                android:layout_alignBottom="@+id/checkBoxYesHepatita"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="23dp"
+                android:text="@string/resNo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtHardDiseases"
+                android:textAlignment="viewStart" />
+
+            <CheckBox
+                android:id="@+id/checkBoxYesHardDiseases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView4"
+                android:text="@string/resYes" />
+
+            <CheckBox
+                android:id="@+id/chexbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBoxYesHardDiseases"
+                android:layout_alignBottom="@+id/checkBoxYesHardDiseases"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="23dp"
+                android:text="@string/resNo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignBaseline="@+id/checkBoxYesSmoke"
+                android:layout_alignBottom="@+id/checkBoxYesSmoke"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/txtFumat"
+                android:textAlignment="viewStart" />
+
+            <CheckBox
+                android:id="@+id/checkBoxYesSmoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView6"
+                android:text="@string/resYes" />
+
+            <CheckBox
+                android:id="@+id/chexbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBoxYesSmoke"
+                android:layout_alignBottom="@+id/checkBoxYesSmoke"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="23dp"
+                android:text="@string/resNo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignBaseline="@+id/checkBoxYesAlcohol"
+                android:layout_alignBottom="@+id/checkBoxYesAlcohol"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/txtAlcohol"
+                android:textAlignment="viewStart" />
+
+            <CheckBox
+                android:id="@+id/checkBoxYesAlcohol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView7"
+                android:text="@string/resYes" />
+
+            <CheckBox
+                android:id="@+id/chexbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBoxYesAlcohol"
+                android:layout_alignBottom="@+id/checkBoxYesAlcohol"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="23dp"
+                android:text="@string/resNo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_dimension"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/txtSendData"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

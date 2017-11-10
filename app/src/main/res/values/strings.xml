@@ -111,4 +111,14 @@
     <string name="tab_personal_data">Date personale</string>
     <string name="tab_health_name">Starea de sanatate</string>
     <string name="tab_history">Istoric</string>
+    <string name="txtHistory">Istoric</string>
+    <string name="txtPrisonResource">Ati fost in detentie(inchisoare) in ultimul an?</string>
+    <string name="resYes">DA</string>
+    <string name="txtDiseases">Ati fost expusi la hepatita(bolnavi in familie sau la munca?</string>
+    <string name="resNo">NU</string>
+    <string name="txtHardDiseases">Ati suferit de icter, boli cu transmitere sexuala, boli nervoase sau boli cronice?</string>
+    <string name="txtFumat">Sunteti fumator?</string>
+    <string name="txtAlcohol">Ati consumat recent alcool?</string>
+    <string name="txtSendData">Trimite date</string>
+
 </resources>
