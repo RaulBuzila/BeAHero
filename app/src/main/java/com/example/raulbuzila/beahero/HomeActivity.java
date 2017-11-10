@@ -70,15 +70,22 @@ public class HomeActivity extends AppCompatActivity
         localDB = new UserLocalStore(this);
 
         if(Authenticate()){
-            NavigationView navView = (NavigationView)findViewById(R.id.nav_view);
-            TextView txt = (TextView)navView.getHeaderView(0).findViewById(R.id.textView);
-            User use =  localDB.GetLoggedInUser();
-            txt.setText(use.name);
+            HandleAuthenticatedUser();
         }
         //Declare Intent
         intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
         intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
         intentGoToDonateActivity = new Intent(HomeActivity.this, DonateActivity.class);
+    }
+
+    public void HandleAuthenticatedUser(){
+        NavigationView navView = (NavigationView)findViewById(R.id.nav_view);
+        TextView txt = (TextView)navView.getHeaderView(0).findViewById(R.id.textView);
+        User use =  localDB.GetLoggedInUser();
+        txt.setText(use.name);
+
+        bRegister.setVisibility(View.GONE);
+        bLogin.setVisibility(View.GONE);
     }
 
     @Override
@@ -107,10 +114,22 @@ public class HomeActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            HandleLogout();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private  void HandleLogout(){
+        localDB.ClearUserData();
+        localDB.SetUserLoggedIn(false);
+        bRegister.setVisibility(View.VISIBLE);
+        bLogin.setVisibility(View.VISIBLE);
+
+        NavigationView navView = (NavigationView)findViewById(R.id.nav_view);
+        TextView txt = (TextView)navView.getHeaderView(0).findViewById(R.id.textView);
+        txt.setText("");
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -154,11 +173,6 @@ public class HomeActivity extends AppCompatActivity
 
             case R.id.donateButton:
                 startActivity(new Intent(HomeActivity.this, DonateActivity.class));
-                break;
-
-            case R.id.action_settings:
-                localDB.ClearUserData();
-                localDB.SetUserLoggedIn(false);
                 break;
         }
     }

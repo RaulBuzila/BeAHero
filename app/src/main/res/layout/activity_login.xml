@@ -6,24 +6,32 @@
     android:layout_height="match_parent"
     tools:context="com.example.raulbuzila.beahero.LoginActivity">
 
-    <RelativeLayout
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay"
-            android:id="@+id/appBarLayout">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        tools:layout_editor_absoluteX="49dp">
 
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -40,7 +48,6 @@
             android:id="@+id/etUsername"
             android:layout_width="348dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/appBarLayout"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="85dp"
             tools:ignore="MissingConstraints"
@@ -48,6 +55,7 @@
             tools:layout_editor_absoluteY="121dp" />
 
         <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
             android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_alignStart="@+id/etUsername"
@@ -56,8 +64,7 @@
             android:text="@string/login_pass"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="201dp"
-            android:id="@+id/appCompatTextView" />
+            tools:layout_editor_absoluteY="201dp" />
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/etPassword"
@@ -89,11 +96,11 @@
             android:layout_below="@+id/bLogin"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="41dp"
-            android:text="TextView"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="163dp"
             tools:layout_editor_absoluteY="363dp" />
 
     </RelativeLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

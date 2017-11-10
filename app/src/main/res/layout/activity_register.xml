@@ -6,31 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.example.raulbuzila.beahero.RegisterActivity">
 
-    <RelativeLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="565dp">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout2">
 
-        <android.support.design.widget.AppBarLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay"
-            android:id="@+id/appBarLayout2">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
 
-        </android.support.design.widget.AppBarLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="470dp"
+        tools:layout_editor_absoluteX="49dp">
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/appCompatTextView2"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_alignStart="@+id/etAge"
-            android:layout_below="@+id/appBarLayout2"
             android:layout_marginTop="26dp"
             android:text="@string/register_name"
             tools:ignore="MissingConstraints"
@@ -73,9 +80,9 @@
             android:id="@+id/appCompatTextView4"
             android:layout_width="348dp"
             android:layout_height="26dp"
-            android:layout_alignStart="@+id/etAge"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/etAge"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="13dp"
             android:text="@string/register_username"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="18dp"
@@ -133,11 +140,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="31dp"
-            android:text="TextView"
             tools:layout_editor_absoluteX="167dp"
             tools:layout_editor_absoluteY="510dp" />
 
 
     </RelativeLayout>
-
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity implements  View.OnClickListener {
@@ -48,7 +49,7 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
                 String username = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
 
-                if(!localDB.Authenticate(username, password)) {
+                if(!localDB.Authenticate(username, password) || username.length() == 0 || password.length() == 0) {
                     ((TextView)findViewById(R.id.loginErrorMessage))
                             .setText("Credentiale invalide!");
                 }

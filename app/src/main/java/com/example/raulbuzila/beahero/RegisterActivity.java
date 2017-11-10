@@ -51,11 +51,27 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.bRegister:
                 String name  = etName.getText().toString();
                 String password = etPassword.getText().toString();
-                int age = Integer.parseInt(etAge.getText().toString());
+
+                if(etAge.getText().toString().length() == 0)
+                {
+                    etErrorMesage.setText("Utilizator invalid!");
+                    return;
+                }
+
+                int age;
+                try {
+                  age = Integer.parseInt(etAge.getText().toString());
+                }
+                catch (Exception ex)
+                {
+                    etErrorMesage.setText("Introduceti numar va rog!");
+                    return;
+                }
+
                 String username = etUsername.getText().toString();
                 User user = new User(name, username, password, age);
 
-                if(name == "" || username == "" || age < 10 || password == "") {
+                if(name.length() == 0 || username.length() == 0 || age < 15 || password.length() == 0) {
                     etErrorMesage.setText("Utilizator invalid!");
                     return;
                 }
