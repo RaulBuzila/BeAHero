@@ -18,6 +18,7 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     Intent intentGoToContactPage;
+    Intent intentGoToUtilsInfoPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,8 @@ public class HomeActivity extends AppCompatActivity
 
         //Declare Intent
         intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
+        intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
+
     }
 
     @Override
@@ -93,7 +96,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_account) {
 
         } else if (id == R.id.nav_info) {
-
+            startActivity(intentGoToUtilsInfoPage);
         } else if (id == R.id.nav_centre) {
 
         } else if (id == R.id.nav_contact) {

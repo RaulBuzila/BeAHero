@@ -40,7 +40,16 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".UtilsInfoActivity"
+            android:label="@string/title_activity_utils_info"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.raulbuzila.beahero.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>
