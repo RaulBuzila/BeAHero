@@ -18,4 +18,6 @@ public class Tab3History extends Fragment{
         View rootView = inflater.inflate(R.layout.tabhistory, container, false);
         return rootView;
     }
+
+
 }

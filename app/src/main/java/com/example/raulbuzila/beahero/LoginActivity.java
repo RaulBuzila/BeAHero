@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -17,6 +18,8 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
     Button blogin;
     EditText etUsername, etPassword;
     UserLocalStore localDB;
+
+    CheckBox checkBoxPrison, checkBoxHepatita, checkBoxDiseases, checkBoxSmoke, checkBoxAlcohol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -24,25 +24,36 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:text="@string/txtPrisonResource"
                 android:textAlignment="viewStart" />
 
-            <CheckBox
-                android:id="@+id/checkboxYesPrison"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/textView3"
-                android:text="DA" />
-
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RadioGroup
+                android:id="@+id/radioGrup_Prison"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="25dp"
-                android:text="@string/resNo" />
+                android:layout_alignTop="@+id/textView3"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Inchisoare"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Inchisoare"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -60,23 +71,32 @@
                 android:text="@string/txtDiseases"
                 android:textAlignment="viewStart" />
 
-            <CheckBox
-                android:id="@+id/checkBoxYesHepatita"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/textView5"
-                android:text="@string/resYes" />
-
-            <CheckBox
-                android:id="@+id/checkBox6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/checkBoxYesHepatita"
-                android:layout_alignBottom="@+id/checkBoxYesHepatita"
+            <RadioGroup
+                android:id="@+id/radioGrup_hepatita"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="23dp"
-                android:text="@string/resNo" />
+                android:layout_alignTop="@+id/textView5"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Hepatita"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Hepatita"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -94,23 +114,31 @@
                 android:text="@string/txtHardDiseases"
                 android:textAlignment="viewStart" />
 
-            <CheckBox
-                android:id="@+id/checkBoxYesHardDiseases"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/textView4"
-                android:text="@string/resYes" />
-
-            <CheckBox
-                android:id="@+id/chexbox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/checkBoxYesHardDiseases"
-                android:layout_alignBottom="@+id/checkBoxYesHardDiseases"
+            <RadioGroup
+                android:id="@+id/radioGrup_Sex"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="23dp"
-                android:text="@string/resNo" />
+                android:layout_alignTop="@+id/textView4"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Sex"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Sex"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
@@ -121,30 +149,36 @@
                 android:id="@+id/textView6"
                 android:layout_width="200dp"
                 android:layout_height="160dp"
-                android:layout_alignBaseline="@+id/checkBoxYesSmoke"
-                android:layout_alignBottom="@+id/checkBoxYesSmoke"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="27dp"
                 android:text="@string/txtFumat"
                 android:textAlignment="viewStart" />
 
-            <CheckBox
-                android:id="@+id/checkBoxYesSmoke"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/textView6"
-                android:text="@string/resYes" />
-
-            <CheckBox
-                android:id="@+id/chexbox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/checkBoxYesSmoke"
-                android:layout_alignBottom="@+id/checkBoxYesSmoke"
+            <RadioGroup
+                android:id="@+id/radioGrup_Fumat"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="23dp"
-                android:text="@string/resNo" />
+                android:layout_alignTop="@+id/textView6"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Fumator"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Fumator"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
@@ -155,30 +189,36 @@
                 android:id="@+id/textView7"
                 android:layout_width="200dp"
                 android:layout_height="160dp"
-                android:layout_alignBaseline="@+id/checkBoxYesAlcohol"
-                android:layout_alignBottom="@+id/checkBoxYesAlcohol"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="27dp"
                 android:text="@string/txtAlcohol"
                 android:textAlignment="viewStart" />
 
-            <CheckBox
-                android:id="@+id/checkBoxYesAlcohol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/textView7"
-                android:text="@string/resYes" />
-
-            <CheckBox
-                android:id="@+id/chexbox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/checkBoxYesAlcohol"
-                android:layout_alignBottom="@+id/checkBoxYesAlcohol"
+            <RadioGroup
+                android:id="@+id/radioGrup_Alcool"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="23dp"
-                android:text="@string/resNo" />
+                android:layout_alignTop="@+id/textView7"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Alcool"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Alcool"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
