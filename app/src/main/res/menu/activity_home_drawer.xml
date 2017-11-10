@@ -5,34 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic__menu_home"
+            android:title="Acasa" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_istoric"
+            android:icon="@drawable/ic_menu_istoric"
+            android:title="Istoric" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_account"
+            android:title="Contul meu" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Informatii utile" />
+        <item
+            android:id="@+id/nav_centre"
+            android:icon="@drawable/ic_menu_centru_de_donatie"
+            android:title="Centre de donatie" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="Contact" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>
