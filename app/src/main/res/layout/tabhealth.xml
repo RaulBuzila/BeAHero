@@ -5,11 +5,226 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text= "@string/tab_health_name"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/txtHealthState"
+                android:textAlignment="viewStart" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup_HealthState"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView10"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_Yes_GoodHealth"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_No_GoodHealth"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtTratament"
+                android:textAlignment="viewStart" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup_tratament"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView11"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Tratament"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Tratament"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/txtSexualContact"
+                android:textAlignment="viewStart" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup_ContactSexual"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView12"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_ContactSexual"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_ContactSexual"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/txtDroguri"
+                android:textAlignment="viewStart" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup_Droguri"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView13"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_Droguri"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_Droguri"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/formular_layout_dimension">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:text="@string/txtULastDonation"
+                android:textAlignment="viewStart" />
+
+            <RadioGroup
+                android:id="@+id/radioGrup_UltimaDonatie"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView14"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_Da_UltimaDonatie"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Nu_UltimaDonatie"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NU" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
