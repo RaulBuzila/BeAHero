@@ -24,6 +24,9 @@ public class HomeActivity extends AppCompatActivity
     Button bLogin;
     UserLocalStore localDB;
 
+    Intent intentGoToContactPage;
+    Intent intentGoToUtilsInfoPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,7 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+<<<<<<< HEAD
         bRegister = (Button) findViewById(R.id.createAccountButton);
         bRegister.setOnClickListener(this);
 
@@ -63,6 +67,12 @@ public class HomeActivity extends AppCompatActivity
             User use =  localDB.GetLoggedInUser();
             txt.setText(use.name);
         }
+=======
+        //Declare Intent
+        intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
+        intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
+
+>>>>>>> 3340282e53f4e38ed7c14015af91a25479ff974b
     }
 
     @Override
@@ -110,11 +120,11 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_account) {
 
         } else if (id == R.id.nav_info) {
-
+            startActivity(intentGoToUtilsInfoPage);
         } else if (id == R.id.nav_centre) {
 
         } else if (id == R.id.nav_contact) {
-
+            startActivity(intentGoToContactPage);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
