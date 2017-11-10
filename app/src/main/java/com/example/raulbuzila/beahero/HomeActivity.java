@@ -22,10 +22,12 @@ public class HomeActivity extends AppCompatActivity
 
     Button bRegister;
     Button bLogin;
+    Button bDonate;
     UserLocalStore localDB;
 
     Intent intentGoToContactPage;
     Intent intentGoToUtilsInfoPage;
+    Intent intentGoToDonateActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,9 @@ public class HomeActivity extends AppCompatActivity
         bLogin = (Button) findViewById(R.id.loginButton);
         bLogin.setOnClickListener(this);
 
+        bDonate = (Button)findViewById(R.id.donateButton);
+        bDonate.setOnClickListener(this);
+
         localDB = new UserLocalStore(this);
 
         if(Authenticate()){
@@ -69,7 +74,7 @@ public class HomeActivity extends AppCompatActivity
         //Declare Intent
         intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
         intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
-
+        intentGoToDonateActivity = new Intent(HomeActivity.this, DonateActivity.class);
     }
 
     @Override
@@ -142,6 +147,11 @@ public class HomeActivity extends AppCompatActivity
             case R.id.loginButton:
                 startActivity(new Intent(this, LoginActivity.class));
                 break;
+
+            case R.id.donateButton:
+                startActivity(new Intent(HomeActivity.this, DonateActivity.class));
+                break;
+
             case R.id.action_settings:
                 localDB.ClearUserData();
                 localDB.SetUserLoggedIn(false);

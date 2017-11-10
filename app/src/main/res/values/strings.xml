@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Delogheaza-te</string>
+    <string name="action_signout">Delogheaza-te</string>
     <string name="donateText">Doneaza sange</string>
     <string name="loginText">Logheaza-te</string>
     <string name="createAccountText">Creeaza cont</string>
@@ -112,4 +112,10 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_utils_info">UtilsInfoActivity</string>
+    <string name="title_activity_donate">DonateActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_personal_data">Date personale</string>
+    <string name="tab_health_name">Starea de sanatate</string>
+    <string name="tab_history">Istoric</string>
 </resources>
