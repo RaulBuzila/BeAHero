@@ -9,7 +9,6 @@
     <string name="loginText">Logheaza-te</string>
     <string name="createAccountText">Creeaza cont</string>
     <string name="informationText">Informatii utile</string>
-<<<<<<< HEAD
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
 
@@ -21,7 +20,6 @@
     <string name="login_username">Utilizator</string>
     <string name="login_pass">Parola</string>
     <string name="login_login">Logheaza-te</string>
-=======
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
@@ -114,5 +112,4 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_utils_info">UtilsInfoActivity</string>
->>>>>>> 3340282e53f4e38ed7c14015af91a25479ff974b
 </resources>
