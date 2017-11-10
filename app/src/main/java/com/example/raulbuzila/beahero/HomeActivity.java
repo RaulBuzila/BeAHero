@@ -1,8 +1,10 @@
 package com.example.raulbuzila.beahero;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +14,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+
+    Button bRegister;
+    Button bLogin;
+    UserLocalStore localDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +48,21 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        bRegister = (Button) findViewById(R.id.createAccountButton);
+        bRegister.setOnClickListener(this);
+
+        bLogin = (Button) findViewById(R.id.loginButton);
+        bLogin.setOnClickListener(this);
+
+        localDB = new UserLocalStore(this);
+
+        if(Authenticate()){
+            NavigationView navView = (NavigationView)findViewById(R.id.nav_view);
+            TextView txt = (TextView)navView.getHeaderView(0).findViewById(R.id.textView);
+            User use =  localDB.GetLoggedInUser();
+            txt.setText(use.name);
+        }
     }
 
     @Override
@@ -97,5 +120,25 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private boolean Authenticate(){
+        return  localDB.GetUserLoggedIn();
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.createAccountButton:
+                startActivity(new Intent(this, RegisterActivity.class));
+                break;
+            case R.id.loginButton:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
+            case R.id.action_settings:
+                localDB.ClearUserData();
+                localDB.SetUserLoggedIn(false);
+                break;
+        }
     }
 }

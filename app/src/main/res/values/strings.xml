@@ -4,9 +4,20 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Delogheaza-te</string>
     <string name="donateText">Doneaza sange</string>
     <string name="loginText">Logheaza-te</string>
     <string name="createAccountText">Creeaza cont</string>
     <string name="informationText">Informatii utile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="register_name">Nume</string>
+    <string name="register_age">Varsta</string>
+    <string name="register_username">Utilizator</string>
+    <string name="register_pass">Parola</string>
+    <string name="register_register">Inregistreaza-te</string>
+    <string name="login_username">Utilizator</string>
+    <string name="login_pass">Parola</string>
+    <string name="login_login">Logheaza-te</string>
 </resources>
