@@ -6,7 +6,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="donateText">Doneaza sange</string>
-    <string name="loginText">Login</string>
+    <string name="loginText">Logheaza-te</string>
     <string name="createAccountText">Creeaza cont</string>
     <string name="informationText">Informatii utile</string>
 </resources>
