@@ -3,11 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BeAHero.iml" filepath="$PROJECT_DIR$/BeAHero.iml" />
-      <module fileurl="file://C:\Users\alin.ciuciu\Desktop\BeAHero\BeAHero.iml" filepath="C:\Users\alin.ciuciu\Desktop\BeAHero\BeAHero.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\mugurel.socaciu\Desktop\hackathon2\BeAHero\app\app.iml" filepath="C:\Users\mugurel.socaciu\Desktop\hackathon2\BeAHero\app\app.iml" />
-      <module fileurl="file://C:\Users\alin.ciuciu\Desktop\BeAHero\app\app.iml" filepath="C:\Users\alin.ciuciu\Desktop\BeAHero\app\app.iml" />
-      <module fileurl="file://C:\Users\mugurel.socaciu\Desktop\hackathon2\BeAHero\beahero.iml" filepath="C:\Users\mugurel.socaciu\Desktop\hackathon2\BeAHero\beahero.iml" />
     </modules>
   </component>
 </project>

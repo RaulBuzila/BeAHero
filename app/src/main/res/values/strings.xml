@@ -23,93 +23,86 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
-        "Material is the metaphor.\n\n"
+        "De ce să donez sânge?\n\n\n"
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
+        "Unul din zece pacienți care ajung la spitalele din România are nevoie de sânge sau de "
+        "produse derivate din sânge." "Statistic, fiecare om de pe planetă are nevoie pe parcursul "
+        "vieții cel puțin o singură dată de sânge." "Statistic, România este pe ultimele locuri în "
+        "ce privește donarea benevolă de sânge, iar multe intervenții chirurgicale din țară sunt"
+        "amânate. \n\n"
+        "Creșterea cantității de sânge în unitățile spitalicești din România scade numărul de "
+        "abuzuri și cazuri de corupție bazate pe traficul de sânge. \n\n"
+        "14 iunie este ZIUA INTERNAȚIONALĂ A DONATORULUI DE SÂNGE, prin decizie ONU. \n\n"
 
-        "Bold, graphic, intentional.\n\n"
+        "Ce să fac înainte de a dona sânge? \n\n"
 
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
+        "1. Este recomandabil să iei o gustare înainte de a dona;"\n
+        "2. Micul dejun poate fi bogat în lichide și glucide (ceai sau cafea dulce, sandwitch,"
+        "pâine cu dulceață).""Înainte de donare, se evită mesele copioase,cu grăsimi și băuturi"
+        "alcoolice;"\n
+        "3. Nu ai voie să consumi alcool cu 24 de ore înainte de a dona sânge;" \n
+        "4. Nu ai voie să fumezi înainte și după ce ai donat sânge; \n"
+        "5. De asemenea, vino să donezi odihnit, nu după o noapte pierdută la serviciu, în cluburi"
+        "sau la calculator.\n\n"
 
-        "Motion provides meaning.\n\n"
+        "Ce condiții trebuie să îndeplinesc pentru a dona sânge?\n\n"
 
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+        "Donatorul de sânge este orice cetățean român cu domiciliul în România sau orice cetățean"
+        "al UE care are reședința în România, este sănătos și se supune regulilor de prelevare a"
+        "sângelui. Alte condiții, conform Centrului de Transfuzii Sanguine București, România:"\n
+        "- vârsta cuprinsă între 18-60 ani;"\n
+        "- greutate peste 50 Kg;"\n
+        "- puls regulat, 60 -100 bătăi/ minut;"\n
+        "- tensiune arterială sistolică între 100 și 180 mmHg;"\n
+        "- să nu fi suferit în ultimele 6 luni intervenții chirurgicale;"\n
+        "- femeile să nu fie: însarcinate, în perioada de lăuzie, în perioada menstruală;"\n
+        "- să nu fi consumat grăsimi sau băuturi alcoolice cu cel puțin 48 de ore înaintea donării;"
+        \n
+        "- să nu fii sub tratament pentru diferite afecțiuni: hipertensiune, boli de inimă, boli"
+        "renale, boli psihice, boli hepatice, boli endocrine; \n\n"
 
-        "3D world.\n\n"
+        "Câte grupe de sânge există? \n\n"
 
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
 
-        "Light and shadow.\n\n"
+        "Există 4 grupe de sânge și nu toate sunt compatibile între ele: A, B, AB, 0 (zero)."
+        " Cu cât grupa de sânge este mai comună, cu atât cererea este mai mare. Cele mai frecvente "
+        "grupe de" "sânge sunt 0 și A. Mai puțin frecventă este grupa B, iar AB este și mai rară."
+        "Fiecare grupă din cele 4 au și RH Negativ. Grupele cu Rh Negativ sunt extrem de greu de "
+        "gestionat din cauza faptului că sunt rare la nivelul populației, în general. Se întâmplă,"
+        "deseori," "ca solicitările făcute de spitale să nu poata fi satisfăcute în timp util. \n\n"
 
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+        "Câte vieți pot salva dacă donez sânge?\n\n"
 
-        "Resting elevation.\n\n"
+        "Dacă sângele tău este sănătos, poți să salvezi chiar și trei vieți, pentru că în "
+        "laboratoare, specialiștii pot să separe următoarele:"\n
+        "– celule roșii (se folosesc mai ales la intervenții chirurgicale și sunt ‘bune’ până la 35"
+        "de zile de la recoltare); "\n
+        "– trombocite (sunt ‘bune’ până la 5 zile de la recoltare și pot ajuta la tratamentul"
+        "bolnavilor de cancer și leucemie);"\n
+        "– plasmă (congelată, poate fi folosită până la 12 luni și este cel mai des utilizată; \n\n"
 
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
 
-        "Component elevations.\n\n"
+        "De ce este bine să donez? \n\n"
 
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+        "Donarea de sânge în România este voluntară și anonimă și este o ocazie foarte bună pentru "
+        "donator" "să afle dacă este un individ sănătos. Identitatea donatorului și rezultatele "
+        "testelor sunt secrete. Ele nu pot fi scoase din Centrul de Transfuzii fără acordul scris"
+        "al donatorului." "De asemenea, în cazul unor probleme, nu se fac anchete epidemiologice "
+        "fără acordul""donatorului. Donatorii sunt obligați să se informeze, după ce au donat sau "
+        "la 75 de zile de la donare, asupra rezultatelor analizelor." "Fără acordul scris al donatorului"
+        ", rezultatele analizelor nu ies din instituția în care acesta a donat sânge."
+        "Cadrele medicale de la centrele de donare nu au voie sa comunice rezultatele analizelor"
+        "prin fax, mail sau la telefon.\n\n"
 
-        "Responsive elevation and dynamic elevation offsets.\n\n"
+        "Ce riscuri există în timpul procesului de donare?\n\n"
 
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
 
-        "Avoiding elevation interference.\n\n"
+        "Pentru donator, nu există niciun risc. În laboratoare și în centrele de transfuzii, în "
+        "procesul de recoltare,se utilizează doar ustensile și obiecte sanitare cu unică folosință."
+        "Pentru primitor, riscurile sunt înlăturate pentru că fiecare cantitate de sânge recoltată "
+        "este testată din toate punctele de vedere,iar dacă nu este conform, sângele este incinerat.
+        \n\n"
 
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_utils_info">UtilsInfoActivity</string>
     <string name="title_activity_donate">DonateActivity</string>

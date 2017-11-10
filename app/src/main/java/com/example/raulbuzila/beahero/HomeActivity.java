@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity
     Button bRegister;
     Button bLogin;
     Button bDonate;
+    Button bInformation;
     UserLocalStore localDB;
 
     Intent intentGoToContactPage;
@@ -62,6 +63,9 @@ public class HomeActivity extends AppCompatActivity
 
         bDonate = (Button)findViewById(R.id.donateButton);
         bDonate.setOnClickListener(this);
+
+        bInformation = (Button)findViewById(R.id.informationButton);
+        bInformation.setOnClickListener(this);
 
         localDB = new UserLocalStore(this);
 
