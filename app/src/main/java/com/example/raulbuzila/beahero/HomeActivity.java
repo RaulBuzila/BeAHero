@@ -1,5 +1,6 @@
 package com.example.raulbuzila.beahero;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +16,8 @@ import android.view.MenuItem;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Intent intentGoToContactPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,9 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Declare Intent
+        intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
     }
 
     @Override
@@ -91,7 +97,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_centre) {
 
         } else if (id == R.id.nav_contact) {
-
+            startActivity(intentGoToContactPage);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

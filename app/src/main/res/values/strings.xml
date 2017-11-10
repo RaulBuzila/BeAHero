@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BeAHero</string>
+    <string name="app_name">Fii erou!</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,4 +9,5 @@
     <string name="loginText">Logheaza-te</string>
     <string name="createAccountText">Creeaza cont</string>
     <string name="informationText">Informatii utile</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
