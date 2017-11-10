@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BeAHero</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="donateText">Doneaza</string>
+    <string name="loginText">Login</string>
+    <string name="createAccountText">Creeaza cont</string>
+    <string name="informationText">Informatii utile</string>
+</resources>
