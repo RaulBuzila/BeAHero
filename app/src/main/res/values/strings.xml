@@ -120,17 +120,16 @@
     <string name="txtFumat">Sunteti fumator?</string>
     <string name="txtAlcohol">Ati consumat recent alcool?</string>
     <string name="txtSendData">Trimite date</string>
-<<<<<<< Updated upstream
     <string name="txtHealthState">Considerati ca aveti o stare buna de sanatate?</string>
     <string name="txtTratament">Urmati vreun tratament medicamentos?</string>
     <string name="txtSexualContact">In ultimul an ati avut contact sexual cu persoane bolnave?</string>
     <string name="txtDroguri">In ultimele 12 luni ati consumat droguri?</string>
     <string name="txtULastDonation">De la ultima donatie ati pierdut sange?</string>
-=======
+
     <string name="account_name">Nume</string>
     <string name="acc_username">Utilizator</string>
     <string name="acc_age">Varsta</string>
     <string name="acc_info_title">Informatii personale</string>
->>>>>>> Stashed changes
+
 
 </resources>

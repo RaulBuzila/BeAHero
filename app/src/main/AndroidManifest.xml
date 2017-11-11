@@ -64,7 +64,7 @@
             android:label="@string/title_activity_donate"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MyAccountActivity"></activity>
+        <activity android:name=".MyAccountActivity" android:parentActivityName=".HomeActivity"/>
     </application>
 
 </manifest>

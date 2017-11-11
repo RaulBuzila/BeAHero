@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Sugestii la: contact@BeAHero.com", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -65,7 +65,12 @@ public class HomeActivity extends AppCompatActivity
         bDonate.setOnClickListener(this);
 
         bInformation = (Button)findViewById(R.id.informationButton);
-        bInformation.setOnClickListener(this);
+        bInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intentGoToUtilsInfoPage);
+            }
+        });
 
         localDB = new UserLocalStore(this);
 
