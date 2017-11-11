@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ResultActivity extends AppCompatActivity {
@@ -31,6 +32,11 @@ public class ResultActivity extends AppCompatActivity {
         boolean isMale = localDB.GetBool("male");
         int age = localDB.GetInt("age");
 
+        SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+        String formatedData = format1.format(new Date());
+
+        localDB.SetString("formatedData",formatedData);
+
         if(!ValidateHealth(age))
             return;
 
@@ -38,7 +44,7 @@ public class ResultActivity extends AppCompatActivity {
            return;
        }
 
-        tErrors.setText("Puteti dona" + (new Date()).toString());
+        tErrors.setText("Puteti dona in:" + formatedData);
     }
 
     private boolean ValidateHistory(){
@@ -59,7 +65,7 @@ public class ResultActivity extends AppCompatActivity {
         boolean rIcter = localDB.GetBool("rIcter");
         if(rIcter)
         {
-            tErrors.setText("Nu puteti dona datorita din cauza bolilor");
+            tErrors.setText("Nu puteti dona din cauza bolilor");
             return  false;
         }
 

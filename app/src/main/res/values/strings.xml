@@ -137,6 +137,7 @@
     <string name="institutionName">Centrul de transfuzie sanguina</string>
     <string name="phoneNumber">0364 417640</string>
     <string name="email">doneaza@centruldetransfuzie.ro</string>
+    <string name="history_time_description">Timpul ramas pana la urmatoarea donare</string>
 
 
 </resources>

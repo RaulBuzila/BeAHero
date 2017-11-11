@@ -50,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/appCompatTextView2"
             android:layout_below="@+id/appCompatTextView2"
+            android:singleLine="true"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="94dp" />
@@ -72,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/appCompatTextView3"
             android:layout_centerHorizontal="true"
+            android:singleLine="true"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="183dp" />
@@ -94,6 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/appCompatTextView4"
             android:layout_below="@+id/appCompatTextView4"
+            android:singleLine="true"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="279dp" />
@@ -117,6 +120,7 @@
             android:layout_alignStart="@+id/appCompatTextView5"
             android:layout_below="@+id/appCompatTextView5"
             android:inputType="textPassword"
+            android:singleLine="true"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="370dp" />

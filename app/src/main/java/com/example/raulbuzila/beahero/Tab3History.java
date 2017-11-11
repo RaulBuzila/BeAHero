@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+import java.util.Date;
+
 public class Tab3History extends Fragment{
 
     UserLocalStore localDB;

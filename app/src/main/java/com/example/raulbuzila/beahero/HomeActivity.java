@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity
     Intent intentGoToContactPage;
     Intent intentGoToUtilsInfoPage;
     Intent intentGoToDonateActivity;
+    Intent intentGoToHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,7 @@ public class HomeActivity extends AppCompatActivity
         intentGoToContactPage = new Intent(HomeActivity.this, ContactsActivity.class);
         intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
         intentGoToDonateActivity = new Intent(HomeActivity.this, DonateActivity.class);
+        intentGoToHistory = new Intent(this,HistoryActivity.class);
     }
 
     public void HandleAuthenticatedUser(){
@@ -144,9 +146,9 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
+            // nimic
         } else if (id == R.id.nav_istoric) {
-
+            startActivity(intentGoToHistory);
         } else if (id == R.id.nav_account) {
             startActivity(new Intent(this, MyAccountActivity.class));
         } else if (id == R.id.nav_info) {
