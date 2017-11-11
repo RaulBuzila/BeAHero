@@ -143,7 +143,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_istoric) {
 
         } else if (id == R.id.nav_account) {
-
+            startActivity(new Intent(this, MyAccountActivity.class));
         } else if (id == R.id.nav_info) {
             startActivity(intentGoToUtilsInfoPage);
         } else if (id == R.id.nav_centre) {

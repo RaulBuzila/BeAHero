@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raulbuzila.beahero.MyAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="112dp"
+            android:layout_height="89dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            app:srcCompat="@mipmap/profile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="140dp">
+
+        <TextView
+            android:id="@+id/acc_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acc_username"
+            android:layout_alignStart="@+id/acc_username_id"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <TextView
+            android:id="@+id/acc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="79dp"
+            android:text="@string/account_name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/acc_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/acc_name"
+            android:layout_below="@+id/acc_name"
+            android:layout_marginTop="42dp"
+            android:text="@string/acc_username"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/acc_username_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/acc_username"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/acc_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/acc_username"
+            android:layout_below="@+id/acc_username"
+            android:layout_marginTop="38dp"
+            android:text="@string/acc_age"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/acc_age_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/acc_age"
+            android:layout_alignBottom="@+id/acc_age"
+            android:layout_alignStart="@+id/acc_username_id"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acc_name_id"
+            android:layout_alignStart="@+id/acc_name"
+            android:layout_marginBottom="36dp"
+            android:text="@string/acc_info_title"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
