@@ -78,7 +78,7 @@ public class HomeActivity extends AppCompatActivity
             HandleAuthenticatedUser();
         }
         //Declare Intent
-        intentGoToContactPage = new Intent(HomeActivity.this, MapsActivity.class);
+        intentGoToContactPage = new Intent(HomeActivity.this, ContactsActivity.class);
         intentGoToUtilsInfoPage  = new Intent(HomeActivity.this, UtilsInfoActivity.class);
         intentGoToDonateActivity = new Intent(HomeActivity.this, DonateActivity.class);
     }

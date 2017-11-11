@@ -64,7 +64,13 @@
             android:label="@string/title_activity_donate"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MyAccountActivity" android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".MyAccountActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ContactsActivity"
+            android:label="@string/title_activity_contacts"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

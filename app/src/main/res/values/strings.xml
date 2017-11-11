@@ -130,6 +130,13 @@
     <string name="acc_username">Utilizator</string>
     <string name="acc_age">Varsta</string>
     <string name="acc_info_title">Informatii personale</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+
+    <string name="localAddress">Str. Nicolae Bălcescu, nr. 18, Cluj-Napoca</string>
+    <string name="institutionName">Centrul de transfuzie sanguina</string>
+    <string name="phoneNumber">0364 417640</string>
+    <string name="email">doneaza@centruldetransfuzie.ro</string>
 
 
 </resources>
