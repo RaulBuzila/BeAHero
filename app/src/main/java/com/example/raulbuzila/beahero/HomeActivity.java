@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity
 
         localDB = new UserLocalStore(this);
 
-        if(Authenticate()){
+        if(Authenticate()) {
             HandleAuthenticatedUser();
         }
         //Declare Intent

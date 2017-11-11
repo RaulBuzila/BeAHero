@@ -71,6 +71,7 @@
             android:name=".ContactsActivity"
             android:label="@string/title_activity_contacts"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>

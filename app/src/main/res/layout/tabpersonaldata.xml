@@ -7,7 +7,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,15 +20,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/formular_layout_dimension">
 
-                <EditText
-                    android:id="@+id/textName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:ems="10"
-                    android:hint="Nume"
-                    android:inputType="textPersonName" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -36,14 +29,14 @@
                 android:layout_alignParentStart="true">
 
                 <EditText
+                    android:id="@+id/textName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:ems="10"
-                    android:hint="Prenume"
+                    android:hint="Nume si Prenume"
                     android:inputType="textPersonName" />
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -93,30 +86,28 @@
                     android:textSize="18sp" />
 
                 <RadioGroup
-                    android:id="@+id/radioGrup_Prison"
+                    android:id="@+id/radioGrup_PersonSex"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_alignParentBottom="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignTop="@+id/sex"
-                    android:layout_toEndOf="@+id/sex"
+                    android:layout_alignParentTop="true"
                     android:layoutDirection="ltr"
                     android:orientation="horizontal">
 
 
                     <RadioButton
-                        android:id="@+id/radioButton_Da_Inchisoare"
+                        android:id="@+id/radioButton_M"
                         android:layout_width="35dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="DA" />
+                        android:text="M" />
 
                     <RadioButton
-                        android:id="@+id/radioButton_Nu_Inchisoare"
+                        android:id="@+id/radioButton_F"
                         android:layout_width="35dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="DA" />
+                        android:text="F" />
                 </RadioGroup>
 
             </RelativeLayout>

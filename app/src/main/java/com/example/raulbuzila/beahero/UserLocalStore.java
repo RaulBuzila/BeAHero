@@ -58,6 +58,36 @@ public class UserLocalStore {
         return  user;
     }
 
+    public  void SetBool(String key, boolean value){
+        SharedPreferences.Editor spEditor = localDB.edit();
+        spEditor.putBoolean(key, value).apply();
+        spEditor.commit();
+    }
+
+    public  void SetString(String key, String value){
+         SharedPreferences.Editor spEditor3 = localDB.edit();
+         spEditor3.putString(key, value);
+         spEditor3.apply();
+    }
+
+    public  void SetInt(String key, int value){
+        SharedPreferences.Editor spEditor2 = localDB.edit();
+        spEditor2.putInt(key, value).apply();
+        spEditor2.commit();
+    }
+
+    public  String GetString(String key){
+        return  localDB.getString(key, "");
+    }
+
+    public  int GetInt(String key){
+        return  localDB.getInt(key, 0);
+    }
+
+    public  boolean GetBool(String key){
+        return localDB.getBoolean(key, false);
+    }
+
     public  void  SetUserLoggedIn(boolean loggedIn){
         SharedPreferences.Editor spEditor = localDB.edit();
         spEditor.putBoolean("loggedIn", loggedIn);
